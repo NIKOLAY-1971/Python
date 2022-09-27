@@ -12,7 +12,7 @@ if n > 0:
     print('Набор произведений: ', end='[')
     print(*(p := p*(i+1) for i in range(n)), sep=', ', end=']')
     print()
-    print('Используемые числа для получения набора произведений: ', end='{')
-    print(*(s := s+str(i+1) for i in range(n)), sep=', ', end='}')
+    print('Используемые числа для получения набора произведений: ', end='(')
+    print(*(s := s+str(i+1) for i in range(n)), sep=', ', end=')')
 else:
     print("Введено не корректное число")
